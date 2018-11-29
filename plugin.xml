@@ -27,18 +27,18 @@
     <keywords>cordova,whitelist,policy</keywords>
 
     <engines>
-      <engine name="cordova-android" version=">=4.0.0" />
+      <engine name="cordova-android" version=">=7.0.0" />
     </engines>
 
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="app/src/main/res/xml/config.xml" parent="/*">
             <feature name="Whitelist" >
                 <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
 
-        <source-file src="src/android/WhitelistPlugin.java" target-dir="src/org/apache/cordova/whitelist" />
+        <source-file src="src/android/WhitelistPlugin.java" target-dir="app/src/main/java/org/apache/cordova/whitelist" />
     </platform>
 
 </plugin>
